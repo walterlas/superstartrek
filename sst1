@@ -1,0 +1,67 @@
+## Super StarTrek - Mar 5, 1978
+
+def intro():
+	print("**************************************")
+	print("*                                    *")
+	print("*                                    *")
+	print("*       * * Super Star Trek * *      *")
+	print("*                                    *")
+	print("*                                    *")
+	print("**************************************")
+	return
+	
+def instructions():
+	inst= input("Do you need instructions (Y/N)? ")
+	if str(inst.upper) = 'N':
+		return
+	print("Instructions for 'Super Star Trek'")
+	print(" ")
+	print("1. When you see \\COMMAND ?\\ printed, enter one of the legal")
+	print("   commands (NAV, SRS, LRS, PHA, TOR, SHE, DAM, COM, or XXX).")
+	print("2. If you should type in an illegal command, you'll get a short")
+	print("   list of the legal commands printed out.")
+	print("3. Some commands require you to enter data (for example, the")
+	print("   'NAV' command comes back with 'COURSE (1-9) ?') If you")
+	print("    type in illegal data (like negative numbers), that command")
+	print("    will be aborted.")
+	print(" ")
+	print("    The galaxy is divided into an 8x8 quadrant grid.")
+	print("and each quadrant is further divided into an 8x8 sector grid.")
+	print("    You will be assigned a starting point somewhere in the")
+	print("galaxy to begin a tour of duty as commander of the starship")
+	print("\\Enterprise\\; your mission: to seek and destroy the fleet of")
+	print("Klingon warships which are menacing the United Federation of Planets.")
+	print(" ")
+	print("    You have the following commands available to you as captain")
+	print("of the starship Enterprise:")
+	print(" ")
+	print("\\NAV\\ Command = Warp Engine Control --")
+	print("        Course is in a circular numerical       4  3  2")
+	print("        vector arrangement as shown              * * *")
+	print("        Integer and real values may be            ***")
+	print("        used. (Thus course 1.5 is half-        5 ------- 1")
+	print("        way between 1 and 2)                      ***")
+	print("                                                 * * *")
+	print("        Values may approach 9.0, which          6  7  8")
+	print("        itself is equivalent to 1.0")
+	print(" ")
+	print("        One warp factor is the size of ")
+	print("        one quadrant. Therefore, to get")
+	print("        from quadrant 6,5 to 5,5, you would")
+	print("        use course 3, warp factor 1.")
+	print(" ")
+	print("\\SRS\\ Command = Short Range Sensor Scan")
+	print("        Shows you a scan of your present quadrant."
+	print()
+	print("        Symbology on your sensor screen is as follows:")
+	print("        <*> = Your starship's position")
+	print("        +K+ = Klingon battle cruiser")
+	print("        >!< = Federation starbase (refuel/repair/re-arm here!")
+	print("         *  = Star")
+	
+#### Set Up    ####
+newgame = True
+
+#### Main Loop ####
+intro()
+instructions()
